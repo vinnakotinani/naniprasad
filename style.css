@@ -1,0 +1,84 @@
+.navbar {
+    background-color:#034efc;
+    color: #b1b1b1; 
+    padding: 12px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for individual elements within the navigation bar */
+.company-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 2 3px;
+}
+
+.search-bar {
+    flex-grow: 0.6; /* Allow the search bar to expand and take available space */
+    margin: 2 10px; /* Add some spacing around the search bar */
+    height: 37px;
+    border-radius: 20px; /* Add border-radius to create curved edges */
+    border: 1px solid #ffffff; /* Add a border for styling */
+}
+
+.sign-in-button {
+    background-color: hsl(0, 0%, 100%); /* Background color for the sign-in button */
+    color: #000000; /* Text color */
+    padding: 10px 20px; /* Spacing within the button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 20px; /* Add border-radius to create curved edges */
+    border: 1px solid #ffffff; 
+}
+.seller-icon{
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+}
+.cart-icon {
+    font-size: 24px; /* Adjust icon size */
+    margin-left: 10px; /* Add spacing to the left of the cart icon */
+    color:rgb(255, 255, 255);
+}
+.search-icon {
+    margin-left: -30px; /* Adjust the margin to position the icon */
+    cursor: pointer;
+}
+.login-page{
+    background-color: #9de5eb;
+    
+    color: #4310db    ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    
+    
+}
+
+.backbutton{
+    color: #271ad9;
+    background-color: #9de5eb;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.backbutton1{
+    text-align: center;
+}
+.sub{
+    color: #4217cf;
+    background-color: #9de5eb;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px;
+} 
+.cart-icon{
+    padding-right: 20px;
+}
