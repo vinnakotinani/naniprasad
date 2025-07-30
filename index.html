@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=decice-width, initial-scale=1.0">
-     <title>online shopping site for mobiles,electronics and furniture</title>
-     <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon">
-     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-    <div class="navbar">
-      <div class="company-name"> flipkart <br>
-         <i style="color: rgb(176, 201, 245); font-size: 20px;">explore</i> 
-         <i style="color: rgb(253, 253, 7);font-size: 20px;">plus</i>
-      </div>
-         <input type="text" class="search-bar" placeholder=" &#128269; Search... " style="padding-left: 20px;">
-         <span class="seller-icon">⛟ <b style="color: rgb(255, 255, 255);"><i>seller</i></b></span>
-      <a href="login.html">
-         <button class="sign-in-button"><b>Sign In</b></button>
-      </a>
-      <a href="cart.html">
-         <span class="cart-icon">&#128722; cart</span>
-        </a> 
-  </div><hr>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NANI - Work in Progress</title>
   <style>
-   .order{
-      background-color: #ffffff;
-    
-    color: #4310db;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    display:contents;
-    
-   }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      background: #000;
+    }
+
+    /* 3D Background */
+    .background-3d {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      transform: rotateX(20deg) rotateY(20deg) scale(1.2);
+      z-index: -1;
+      filter: blur(4px);
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 0 5vw;
+    }
+
+    .title {
+      font-size: 8vw;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 5vw;
+      color: #ccc;
+      line-height: 1.3;
+    }
+
+    .glow {
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+
+    /* Small devices optimization */
+    @media (min-width: 768px) {
+      .title {
+        font-size: 3rem;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+      }
+    }
   </style>
-  <form class="order">
-    
-       <table  class="image-container" cellpadding="1" >
-   <tr>
-     <td><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT43KXma2gBaJzhb6xga1fHBf44Hn5nVIFoIH0UQJBSq4HYvI0TQQuDCmZ2HpJucva46vN3Ha2IYK_N9Kc84BN3HmqSJ84eF7ORamDC4q2KD4bQ3RBSDfh4sComKKQBBhwnwh5VORHFPA&usqp=CAc" > 
+</head>
+<body>
+  <div class="background-3d"></div>
 
-      <td><h3>realme Narzo N53</h3></td> <td>  <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" height="30px" width="60px"></td> 
-  </td></tr>
-
-  </table>
-  <table>
-     <tr><td><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRoUCnPDBaD48m1Hs4puD1z9_d3pdBYKPeaLDv5E44Ob1wUGltgHWSXgHHrU2LaQWK9sS3IpEhzBs4PSYhijfiB_V2GVD3MYdBzjTKCled_WwGmiOxDFurYbo1nvR0CGvVXLYp9v913LA&usqp=CAc" >
-   <td> <h3>realme 11X 5G</h3></td> <td><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" height="30px" width="60px"></td>  
-   </td></tr>
-     <tr><td><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSOv-RMQKzlSwCvDHfrSvPg84OUzVqKEV0EvqopyYnkfQEAvPmXjOYq5gs8-FOR5DYD7ccvHI2Mq8pfUMhyjUdhKcbAgiU48RwTGWfnx6Qia3L3dhSMenV2hCWjG4nUSCt08c6nxA&usqp=CAc"     >  </td></tr>                                                     
-     <tr><td><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRyPbQj11SHh16nOP7TeLefQl9Y35SoTnYWWonuLTsL35iRlGmat7H1_l0Qyj-h5iYqMPQxHg4o9usGUedlZ_OoOLsOmyTaQtL3iuh65CBEGEKxwfhFSt-xlOdydvjOuLFyGcfOCwnr1fw&usqp=CAc"></td> </tr>
-     <tr><td><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSN_Mkz1f-2NFY_8uu5WpyzPQVJNTih3wCKJ17D2_eKuEbYd83RqcpDxUZpu9a1qsrHL-_nrl3Z07JkFeTUBr9_LejEcnHOVPlteeEYPzQIBpwnSkxfaJAwiE2GEU3dCw6xysnxOueCzQ&usqp=CAc"></td> 
-     
-   </tr>
-  </table>
-</form>
-  </body>
+  <div class="content">
+    <div class="title glow">NANI Website</div>
+    <div class="subtitle glow">🚧 Work in Progress 🚧</div>
+  </div>
+</body>
 </html>
