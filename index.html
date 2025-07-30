@@ -1,256 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amazone</title>
-    <link rel="icon" href="data:image/png;base64,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">
-    <link rel="stylesheet" href="style.css">
-    <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light navbar-color">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img style="height: 32px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZkAAAB7CAMAAACRgA3BAAAA8FBMVEX///8iHx//mQAAAAD/lgAeGxsbGBgQCwvy8vIXExMdGhr/lQC/vr7j4uJfXV3Ix8csKSnY19fQ0NCNjIwoJCTw8PAUEBA4Njb4+PhTUVFLSUlAPT0JAADq6urCwcH/nACfnp5qaGh+fX1GRETe3t7/+vGZmJiysbEyLy+OjY2bmpp2dHSrqqqEg4Nramr/slj/9+v/69X/xH//26v/5cX/0Zb/qzT/vmb/rUX/6Mn/37H/37//8+D/zYz/pDP/pB7/t2v/slr/2a//wnX/0ZL/p0D/nyL/06X/rk7/sUD/xYf/tk//vXn/xnn/wW3/tk5phsf0AAAWNklEQVR4nO1daUPiyhIFQxISdoQQIAiyCMoiqIg7znhHR5038///zUvC1l1VWQARHed8uncMneo+VdXV1dWdQICCHktFD3vxgoV4t5OuZ8nHfEIvxer1esyljbD1RKy05FvC9XSnu5+fSLnbTMXC60i5NLIxu1vrv3UyPCXvdvTm4X7REDRFEi1ImmEk8+1KasX3Nnf3C7lkplXMV49K5BOd3bj5RDJXiFebut9mY51uvCUYmqRaQqqSJsg5U4noN7w5wtHDdr6Wa2VauVq8epBevaV6pZ232inm492E24OlaM2QZUUNcjDpkYWcS7dj7SKD+PwVpYOgYbYmikFr8GRjH/UhVVUmT9jDa8jxtA9y6pWcIGuSCKRUTCkLe866p+8agl/IXUc5Ss2CIMu2TgRNqc23GnI74WbwJXZ4cr35IOjRvN0Pe3gUzRC7dYcWwpWiIQUdoAqFjlOX84bKQAtOOazUBH70tOAuN3Cxakbm36Ip7ZhLHy3Uuy0BqM4Ckhx3VL0OkMYNouDQWf2wIOAx0oT4gaPA4Tg3PHJrSnqqB1oS5STZil5RZMce2702CrTdhgX+QaFp/WsWvth+d46xvGZGxmOlqU4KYCPWlTXXAVaMuIP+tjW338Fm9skxarZkWncludVxMLMYHJ7JzNAUFNSKaOSx2dTjxDBBcdUK9WrIjGGNrR6XySZqc5s40khFEI1DZ2ISOcNLyKBc3NsQM9m2s7WaTqVKqwTNTBN646nwBThpNDN+5BaNNuHHKWYciDG7PDPmiqMmyI7UdB00lodkVDbCTCrn3oKWJOMkkpmo4dB7Lc9T0zFcHRnTbNcfM10HYsxxb9vUNF1MVHZw2oeC4084iKRHXJeZdBK7Hx5Si7JWipl60nG8jTb7YwfTokAoNMFM2mUMZWsaKmVcVEHUyAnNmW3UgEAM0ZrM7AW9lVe1++bNTDjuQjJr8Qm3YQIQFTRqiJlmIO/yZjWjB3T3YVJ6xGza8WkxFqQajvHXYyYt+hkjNRj1w4xrV9TiXPZszo/3nstc8GYm6mr3xkEg7aH+BjaaPdF/0Eua9lrM1Fv+xkjFiouZCTv7MguLEMi/l7ChQbWAzMidtiszai3rZs32O9rgHQG9uIz6mP1Hoco6zOg1rzlm/sMajNAwMxX3AReT01+mKYlFRTYMOhLSqh7MKFUPw1eq7n83IcNxrVAOQLWkpNc3BgoClmIGdPKAHEvSijUYIyFm9vIeSjbzGIT+KkIr3q10dgsC0RuxBZbpkJmgp355K6ABlvKlGmJblIVcb7fSqeaINVtQiUNmqsswI3DvT+AISdQEIZM0iKSJAESHzCiegshH9g/TqFuStJ/I2lNwOFWVsP7DVyNm3gByhX9HBymtkqmmbCn1cDSO+yrm4GraXHRLFCjFV/JcCFJAY6TluulSKVvqFBT4e6nAhy+QGW9Mffku7LNSZCeSZhJJLgN7dWTGSlR6SeHwAHxHDeqmEWdH/hB7GwUGznonnqdQxCKIGW4eb6LEg9abx0+VDPw90CpHZkRVUsnuS/Zqs1QARiFl+IAzgRqWQHRGMyPKarLVykgupitpYiaZ0SjfBkKAFHyF1uMn2gPUCJEICGcxwnWCGWOX/Vk2DtVCrjJmsQd5k/ggwIEZSUkW88WkRPRebFlalwLtikkY9qHQTcz4YEZpHe6Z81Es2qb1wloOxjt79VKq04PbDtbP41xsBWdgFUVABTh6aCZ2QJUwtxrnj/DQ57gWKlD5+EQ1zYyRt7dVwtEe8WfZSuB0wGuhGzEnImSuqjczWn4eJiSQJ550L9mcDr6ezqB5VOLTRz2gWQJaa8N+OGSLEcilF+8IUYgEHGUWaoVUY/9MMiO3Z/3Td7FXsWdyGEsKaPGMjVninyGYUQqMTjepkFPKMbZZzyHyC2wAqIM4E06yJkpIsfEzBOo5IsLh03ZoZJU2aLkC363uuf3ehMEG5ThWMyzF6/K/E4NYerQQkPiwh7IZVjQdarwNbr2KZnC1xoXmIHMtc/OAjSwkVy36YWYfK6wCKEXrQpQcy6JZkJWPYEYqss64jh6wY4hsTxUEQ1amwaOB+4wnGoXPdmNmgCeJEruAvNPUYROAmXRBYqVUcHYqDJdvYssHM0jbZ9Mv0zByZmgVHCgCw1PZDUKCGZWXH71hwqyeSu11dtv5nLl0MgS0CggQCg1yQ5gZsOLJ4shbAFsZMCoGzARKppSV7n4haVhSxvGg67B7fpiptwhfVuGfScFpFoamAcIfCcwIYWakAh+/NJHNwcm+lN6jerM0M2ILJK1Q4KTy0Y1pl6BvkJkF9FiC2urX9yEzSW9mctjNajBwQMM2XaGziELTY5M7mBnojFPwAQWlDWkszYyyDwYFzVQoYwmdOR8B+MAqzBC+TEVOA2VnBZwHTydhM8XFHzEz0GHEYOrJLzMonefFDNIqNAQGnEShZkpoP9wDKMzwZiZKLIJh5ikQQGaVIYoocFZvIT5iBkVZaCpTev46fYSY4cXHzHiNe1CGqZPouswg3RYzXswQWy4GzKMTsUkRW3MWZY+lRQdx1A2TrTqUXfJci+nZWD2VRkGvFzMqDJ32kEFD1YTMqEswY9XnpqIwyxQMejDTxsssKY/KX1BySqKqptAQMbkzxAyeqGAE4cZMLNHsHHR7+WJSxjl2L2aC0CJgWQBOAUHufM0zej3RrBxWTSmDAlFv5M5MlNhEghNAgHDE5E44Cs6Y6AoxI6CYH65LJLSFYaFU77SLQUnRNNlcP5BJLy9mktAiEDMtOARLMqPHUpX9nGRKKcuaQuxUWHBlpkTU7lA1O2gxhzYOLeCE/SLvh20GlY/4YCbWqRZlQ3NKQs5e684MtgjETA4yg72ZCzPpSi8nGEQelIcrM4Qv04hlEg4rcWIxQARJ6qJEBDGjoigDEguZyUbzQY0unOThxUwLMgOdtVhcnZlYpyhqdJIUwI0ZYiteDBJTGwrG6TpF5POYjV/ETAaF3e7M6M0aUUtNwpMZOO6YGbzhyD/hxEzpKOlSwcrDhZk64cvIInMcdZHMoEx3UJ330Aczrt5sr6j4Lk5Z22bUFZkJdzLu9eYcnJmhKvHI+SNQQukLkhm0LGCCCcQMcvZuNlOq+qoYnmLpCABuSa44z6TiSxy0cGOG2JyWkmS9eAwF4+Q8A8V3YwZPwy7MpItLlZx5MZPZDDMdX1XxCzgykyYOFCj0uZvVmZkP/zrMNJ1qqUXVDExxDLQdZioOBmMJaUqJ/+jETBaVe5A7PpNhRXkXkhm8lF5UVq/BDF1LLclyJlco5Pd7SLitMEMX40mylixaUu6jbVFHZmBeO4h3y+bA8wxZX4DLWBbLydWZqRNlzaIm5Hc7iUkYiSLMbTCDtdJ8yJDiB830ZILAFbsOg409jxkwO50QLqHYzC8z8zFYnZk8ViEtU00ttlhwrvn9mUnh/XpRzh0sDmsTW9o0MzG4AWn1t0I+GqCiZjKGI7zZ+vMMXnOJAn/I9iMws4+klJJH7P6cb2Z6hCI6JxBxfE0ys4nYLIaUUQyCJP4HYAbrpAKa8MsMXhMG1YxLJggn2mHljAW8npEcV5p+mcH5I5QK3T4zOt6uhnkGn8ykiHJdtGnBAmWRlX3iqCri2yU745MZHfVHRta6fWb2oJBBBaZS/DGD6jisDrtu7aJFKbk/gyvOnDOaPplBNfbEZiKuA3gPZlgxUIUrLsAkxpxgZpcoWqy55qSRNajEQUNiF6DnuAvgjxmsacQeBa43e2dmwuhIAa6SCKNKUoKZNA7LRLTNB36CC4OIwi/k85iV62rM4BBSwLMhdrXvzAwaHRXreRYXSeAKW+JMn4BrlDigOoBJOTgA2itg4vDVmEmhEBIXIBLhyTszg0pEtCoedVQXj5khyv6lvFcdByITl9dQFRqLqGI1ZpAXlfLotTipB2rhN84MmkLwIUyiOFiDY44PKJnopBOJRDrlfP8a3tTE2wApmBpiC3dWY4aIPNBr0xnUZz7M3DgzSCMJZvA6RQDMlMjT0bJ1aZbSqsXbux3yfgi0VMEnQAMJVJPPnNNYjZkq1EaCGXytAEhmbJwZtJohmMGhmQBmaiILtRBIlRTZEITCbgpGXilUlK2glyMFZw+8rcYMSgMS5dQ4zwRS5ptmJowmd8xMjChq51MZeJlOQJK1wi6YRbEvRSOLNz4ZrViNGRRqwpN+VBoVHgjbNDMlpBt4N4XYI+Brp0vEpgwJSTZyHXbWQfEHejuuwmTzBKsxs4/Ehd4ZR2ZWp7m2N80MDoglWH+UJY6O8UtCIvfvCFXIM/aGTu8CxSScGefu38ibIUfRobwzn5zdBDNsKkLHSxUDrLqI6jFTSrYraMXhCklgclT4xDvvJ+vQpsUWa3OrMYNPb4ITFnX6wL7BjuymmcFuHDqUKL3fWWR8SmuZ2o4gVzWPZii1xb0dx9WcH12NGSLEl1lNq+PbI2wobFpv48xgfed7F3W4EIJNzi7hzCY9XGgoUdnE7gQcoDyzyFn0aswQN8SJTNltuuYUabJKu3FmiMukpMKihahDXXOQLX1flhn2xgG8uchwfuB1x8hqzNQJIxfVbsm+zyXWzTg7ZyZHsXFmqNlbSXasW2f0cD3ufKGhlJtr7zrMBPBxTjmeDuu6nt3Lo6IdmPJcjRn62kA52Ds86sZFt9topcVByo0zg876220IuerBQTVPXo4y78k8VFmLGWItpAi1/fZ+iyg4hkdwV9yfcbi4S7EOP7iLbsyTtBtnBpd9T1qxjmh4rFLmdyasxYxOXXylKmThOzqkuiIzy1/xNMPijtSNMxNoLlecyWAez6zFjPuFrPzv0PbNqnUAxCUSGMTtnlpx3v7mmUE3u/gUMijPj/fRzDhf8wXuHIr6OhdiwkBFBasyQ5UsQPGVClrJyYsbf96BGT9JLynZdItuYY5B0gxBUJLJpGhnm63PRvAPgNugPO6+nEHDW8Ir15sdet3nrpoeIQbWwUab3QzePDO62zXDkx9k0nANILI758yfVE0L5uLVo716yUasnogexovJoMZ8GAHd00WmGSCoy2FWr9F0uid+9lTSctV8XpOvr3kHZgIxj5uLtZrVIhfPqBK7Zp61L2pGodpJEDuZsUSnW5t/DwLfoOZ9Ra+oUXXrqzMTK7hNNdr0hBQjlyofch17D2YCadf78afONcxomcRfGzRpX1Na09s3aWRT7ZZiDwdmJnDo/q2RoERsGwXWOgsQKzhqgyj0pvOJPq86lXKghvNdmAnsOd9lLRkzVSnNb5KR8/wrrCMecrDt/VkovdlWZOuOU1zwF0266bBRoKtw1jk/E4vTXwQStWBl3pNscSKWghp+H2YCqSS98lXZz5okWhNq0NdCDgVZbtd9fa5LT7VVmdT/et7xaJ6mtB1KCdY6cxboFLGzEGWxy3avZN+9q+RR2VMYxKsqvNA5EAMxJx73FPy8E1yvWSN2IGLjVoUiV5eUtq1GqEKN15uHS3yrLXZEfHrBQjRPKrGm9RxbLwFjl/D1KDApyiarS5WWYX28a8KJ9VUyOdMFLwvnBdkoIl22IkoOAi4uOTL4J5BC6l2Bf4I8nJfatZf94kJKo3gAJ6SiIQtUVfjbILtXM/iPrJlSSO2Uyws7YHgq6IlSixsfA5x+TlW68WIwYyJZzLcrVCHJUfeAlCAcZUFV1pfYB/aoJ+rcE45FRomDar5lCZlp1eLVDlEvmd3tOij8G6HUqeZzsmASZGqGkMl3vSavrGfnAwn2ESJyzMZSNmLv9PnD1VCq20K6fqNz8yIkOrvt6mEnjYpt/uEt0Jhg22L8A4vL09tf99+OLXy7/3V7erltgf4h0B98H5UjJkILWP87fhpsW7QvjatfF+VIaIdAKFL+1d+2eF8UjctXy0AoWiaIjLct4vq4fDndtghL4/LejZUJNTfbFnJdDEyPcPf9UwU1N789eTGZ+Xz6BnAZsvzyt7Nty+Ef38cRT15MZobblnNdNEZWP0Oh0WcJZx5YXmbRGJ5zIv9tW9C10b+wuxopv3wKz9www7EJG5FIeXz+Z/RwYuLh9dwMn1l2Pr/NmH2damGo/L/PEGpe3P34+fv29GzQ5xb95n9fjR4X3Hz+ecbCydRBfA676TuHKzc/59REPtHM6YLh3G8/fgq7cUR/YTOfQMf84LQ8U7ZI+eSzxAIEGhfzfmxblLfC4G7hBx6PPy83o2k3Qn9BDmCK/mgRjYZCr9efau25wO8ZM7+3Lckb4pYJOkM7P4afkZvG8bQTke/bFuUtcT1muTEDtc+w03H5NBo9zZWocT7tQvnzOmQKNxdc3iNUPj794IZz+q1srv8jf2b/3yhPRb/41CEmgeEOl+X40IbTODuZ7c/MFy+DqWqFfm1VtE3g7A6kCyPl4w854zSGP8tzUSNX038dztbMf0UGAOBhByQHQxEzVPtY67ab61GIyZKFyjPdmQcAWxVvUzgroyx7KHR38nGyHVe/7rjUcmhnFog17qb/8rxVATeGxi2xMxWJlB8utz+t9gcPcPM/dDefCs9mAcDHUaM3xjW5ORXZ+bFly7m8vdiBkkVGC0/7NOEsdL59FdoYTsrUhq61L/LnabCNfjcG1yOwBWNL9MjM9bOsWegv2JtxxuCcrhiyIumfJ1fvG641rk6OqQqmUOSVDU36s/n/LzYZC1cwgF4MiGk74/9d37zHADRuzk7G1nYyJccF71xvI1P/9g5ybRU3Jw5mM+l/ZPzz5XSzSZCb05fjMXZhUwFCQ6AaU2f2l2VmSAyO4eIG2I6pys+3gw0YT+NmMHzdcan2C5V/w7deTv/y8ubSfEA0rp2mm8UQmfH0xa/h1dutRW+uhi6mMn3pOY4Sh9MffKxV8eZw+sO77M7W7cfnh+Hg5sZlm94Djf7Nzff/PZft9tzfd0dkX/qTPPPfUDTjE/0nnBRwsp5IaHxx/zI8vVousm4Mrk6HL9+exxFXS5kiUn6iWj+zpQz9/IhZvk2hMbzzUa864ydkB1KPj3d/RifDa8uKLDQY2P/Qv+kPrk+HJ79fnx8fbV59vSMUunPIsL7aPy9/2Nz4ZtD/PvahzHAMJwV7oXJ5PD6/uPh5/G10fz86/nnxfD4el8s7k3I+L8/FtxkZf3ewxknZzBfyZTM0ri9c4zRvmlis1oi5xj1z9FX2/B+6/0q+bI7r+52lDeftEIrsPLh4KrsC4K9OmLmif3u3juGsw8vO3a3rqA8sYsZfJWAm0LjaguGEIuUHryM+DxGTmC+w+HdD/78f72k4oVD5B0zDEBiHvrTFzHD2snyothoikfOhrzh4VH74qnMMj/7Z6+POqjGWT1h5hdHAZ7DV+MfLHI2rl/OIv+zAKrREQucv19vu46dFf/Dw6JnkWoEVs8E/w3fZ/vmbcXP64nRjwkqsRELj+6HzgvIfloF9y8gaa/uZpZgo/3ka3Pyj5U3Rvxpa1434y0tiS4mUz+9f3nCT5x849AeDp9/nO7NLevyYiZ3VHL8Oz7ZSkfPV0D87/e/l1/GP8TSfDPKYUz52yuc/719uT6+++Mr9/dHo3wwGg7PvT7cPo9Hr65/n5/MJnke/T26/m3/7ChPK/wEWhyNhgVbBVgAAAABJRU5ErkJggg==" alt="amazon">
-        </a>
-        <form class="form-inline my-2 my-lg-0 ml-auto">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-warning " type="submit">
-                <a><img style="height: 20px;" src="https://res.cloudinary.com/doxq1u0cp/image/upload/t_Profile/v1699000624/search-outline_ihbmfq.png"></a>
-            </button>
-        </form>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       All
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Mobiles</a>
-                        <a class="dropdown-item" href="#">Furniture</a>
-                        <a class="dropdown-item" href="#">Laptops</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Language
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Telugu</a>
-                        <a class="dropdown-item" href="#">English</a>
-                        <a class="dropdown-item" href="#">Tamil</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Your Account</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Cart</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">log-out</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+  <h1>alternate attrebute</h1>
+  <P>in this attrebute we can write a code with image for a problem. image doesnot desplay alter nately this text was displayed</P>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfKRu2x16WAgAc5fdg_AfuDy9rBQMNxmAuQ&usqp=CAUs"><hr>
+ 
+<h1>para graph tages </h1>
+<p>in this file we can exaplane different types of tages</p><br>
+<p><b>there are</b> </p>
+<ol>
+<li>br tag is used to break the line</li>
+<li>hr tag is used to draw a harigental line </li>
+<li>pre tag is used to print preformating elements</li>
+</ol>s
+<pre style="font-family:courier;">
+  first is br tag 
 
-<div class="pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <h5 class="text-white h4">Work in progress</h5>
-            <span class="text-muted">Please wait</span>
-        </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Left-Aligned Dropdown Menus -->
-        <div class="dropdown ml-auto">
-            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown 1
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
+  second is hr tag 
 
-        <div class="dropdown ml-auto">
-            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown 2
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
+  third is pre tag 
+</pre><hr>
+<div style="text-align: center;">
+<h1 style="text-align: center;">styling</h1>
+<p style="font-size: large ;">in this style  tag we can example the different types of tages</p><br>
+<pre style="font-family: Franklin;">
+  1.background-color
+  2.color
+  3.font-size
+  4.font-family
+  5.text-align
+</pre>
+<p style="color: blue;">color tag</p>
+<p style="background-color: red;"> background-color tag</p>
+</div><hr>
+<h2>Formatting</h2>
+<p>IN this formatting we can explain a diffrent tages</p>
+<ul>
+  <li>"b" tag is used to bold the text</li>
+  <li>"i " tag is used to italic the text different styles</li>
+  <li>"del" tag is used to strick the line</li>
+  <li>"em" tag is used to italic the text</li>
+  <li>"sub" is used to write a word in kinda </li>
+  <li>"sup" is used to write a word in pina</li>
+  <li>"strong" is used to write a bold text</li>
+  <li> "ins "</li>
+  <li>"mark"</li>
+  <li>"small"</li>
+</ul>
+<p>we can use bold tag in <b>bold</b> and <i>italic tag</i> and delete in <del>dell</del> <em>is a like of italic</em> <sup>is a super script</sup> <sub>is a sub script</sub> <small>is a small tag</small> <mark>is can a mark tag</mark> <ins>is a insart tag</ins> <strong>is strong tag</strong></p><hr>
 
-        <div class="dropdown ml-auto">
-            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown 3
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
+<h1 >quotation</h1>
+<p>the  quotations are clasified into 6 types there are </p>
+1. "q" is used to quotate the paritcular part<br>
+2. "blockquote" is used to sepatate the para<br>
+3. "address" is used to mention the address of the parsion<br>
+4. "bdo" is used to write the sentance in revers<br>
+5. "cite" is used to mention the popular cites likr paints ,cites ,locations<br>
+6  "abbr" is used to abbreviation of the word<br>
+<h2>usage of quotations</h2>
 
-        <div class="dropdown ml-auto">
-            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown 4
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
-    </nav>
-</div><br>
+<blockquote cite="www.google.com"> is used to separate the para in different colom like you can see in out put then you can understand this tage ate used to creat a paticular block of para in sepatate .</blockquote>
+<ul>
+<li><p>abbr stands for abbreviation id used abbriviate in different words like WHO ,WWW,CSS <abbr title="hypertext markup language">HTML</abbr></p></li>
+<li><p>"q" is used to quotate the particular block of part <q>this is quotate by q tage </q></p></li>
+<li><p>cite is used to mention the popular places like cites ,places, like<cite>VADLAMURU</cite> it can show in italic</p></li>
+<li><p>bdo stands for bi directional override it is used to write the lattres in revers <bdo>this is NANi</bdo></p>
+  <bdo dir="rtl">this is NANi</bdo></li>
+<li><address> this tag is used to locate the address of the person it can shown in italic<br>
+  from<br>
+  Name:v nani<br>
+  vadlamur ,east godavari<BR>
+  1-345. <br>
+  pinn code:5333098  
+  </address></li>
+</ul><hr>
+<h1>comments tage </h1>
+<p>comments are not displayed in browser it can only show in code <br>
+comments are used for coders to  understand the code in detailed<br>
+comments can do different works like hide the code  inline metter etc...
+</p>
+<!-- this is the comment --><hr>
 
-<!--images  module -->
-<div class="image-box">
-    <div class="image">
-        <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-Background-Image.png" alt="Image 1">
-        <p class="image-name"><b>Apple iPhone 11</b> </p>
+<h1>colors</h1>
+<p>colors are  used to color the text and  background <br>
+they can cladsify in five types HSL,RGB,HEX,HSLA,RGBA</p>
+<P>COLORS are three types they are color ,background-color,border color</P>
+<p style="color: blue;"> it is used to color the text</p>
+<p style="background-color: gray;"> it is used color the background</p>
+<p style="border: 2px solid tomato;">it can be draw the color border </p><hr>
+<h1>different colors</h1>
+<ol>
+  <li>RGB stands for red ,green, blue</li>
+  <li>RGBA stands for red ,green,blue ,alpha rgb(red,bleu,gren)</li>
+  <li>HEX stands for hexadecimal values it can be return in #ooffoo</li>
+  <li>HSL stands for (huc, saturation,lightness)</li>
+  <li>HSLA stands foe (hus ,saturation,lightness,alpha)</li>
+</ol>
+<h1 style="color: rgb(231, 123, 20);">different color types shown in thses five</h1>
+<h1 style="color: rgba(125, 211, 51, 0.6);">different color types shown in thses five</h1>
+<h1 style="color: #ff0de2;">different color types shown in thses five</h1>
+<h1 style="color: hsl(139, 78%, 48%);">different color types shown in thses five</h1>
+<h1 style="color: hsla(120, 86%, 52%, 0.7);">different color types shown in thses five</h1><hr>
 
-        <div class="buttons">
-            <button class="cart-button">Add to Cart</button>
-            <button class="buy-now-button">Buy Now</button>
-        </div>
-    </div>
-    <div class="image">
-        <img src="https://www.pngmart.com/files/15/Apple-iPhone-12-PNG-Image.png" alt="Image 2">
-        <p class="image-name"><b>Apple iPhone 12</b> </p>
-        <div class="buttons">
-            <button class="cart-button">Add to Cart</button>
-            <button class="buy-now-button">Buy Now</button>
-        </div>
-    </div>
-    <div class="image">
-        <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-Download-PNG-Image.png" alt="Image 3">
-        <p class="image-name"><b>Apple iphone 15</b> </p>
-        <div class="buttons">
-            <button class="cart-button">Add to Cart</button>
-            <button class="buy-now-button">Buy Now</button>
-        </div>
-    </div>
-    <!-- Add more images as needed -->
-</div>
-
-<div class="image-box">
-    <div class="image">
-        <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-Background-Image.png" alt="Image 1">
-        <p class="image-name"><b>Apple iPhone 11</b> </p>
-
-        <div class="buttons">
-            <button class="cart-button">Add to Cart</button>
-            <button class="buy-now-button">Buy Now</button>
-        </div>
-    </div>
-    <div class="image">
-        <img src="https://www.pngmart.com/files/15/Apple-iPhone-12-PNG-Image.png" alt="Image 2">
-        <p class="image-name"><b>Apple iPhone 12</b> </p>
-        <div class="buttons">
-            <button class="cart-button">Add to Cart</button>
-            <button class="buy-now-button">Buy Now</button>
-        </div>
-    </div>
-    <div class="image">
-        <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-Download-PNG-Image.png" alt="Image 3">
-        <p class="image-name"><b>Apple iphone 15</b> </p>
-        <div class="buttons">
-            <button class="cart-button">Add to Cart</button>
-            <button class="buy-now-button">Buy Now</button>
-        </div>
-    </div>
-    <!-- Add more images as needed -->
-</div>
-
-
+<h1>CSS - cascading style sheets</h1>
+<p>css is used to layout of the webpage ,it can be used to modirate the color, font,size ext...
+  <P>there are three types <br>
+    1. inline style<br>
+    2. external style<br>
+    3. internal style</P>
+</p>
+<p style="color: lightblue ;">this is inline scc we can write css code in same line</p>
+<p class="style">this is the internal css we can write the code in another line using style tage</p>
 <style>
-       .image-box {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin: 20px;
-        }
+  .style{
+    color: rgb(50, 26, 236);
+    background-color: orange;
+  }
+</style>
+<p class="para"> in this line we can write a code in saparate file we take a style .css</p><hr>
 
-        .image {
-            width: 30%;
-            margin: 10px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+<h1>button as a link</h1>
+<form>
+  <input type="text" name="nani" placeholder="enter name">
+  
+</form>
 
-        .image img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        .image-name{
-            text-align: center;
-            font-size: 12px;
-        }
-        .image p {
-            font-size: 14px;
-            color: #555;
-            margin-top: 10px;
-        }
+  <button onclick="document.location='https://www.youtube.com/watch?v=VBkeNvUvCVs'">subscribe</button><hr>
+<p><a href="#C5"> chapter 5</a></p>
+<h1>chapter 1</h1>
+<p>this para explain the same thing</p>
+<h1>chapter 2</h1>
+<p>this para explain the same thing</p>
+<h1>chapter 3</h1>
+<p>this para explain the same thing</p>
+<h1>chapter 4</h1>
+<p>this para explain the same thing</p>
+<h1 id="C5">chapter 5</h1>
+<p>this para explain the same thing</p>
+<h1>chapter 6</h1>
+<p>this para explain the same thing</p><hr>
 
-        .buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
+<div class="image">
+<h1 style="color: white;">IMAGES</h1>
+<p style="color: white;"> animeted images can print </p>
+ <a href="https://chat.openai.com/" target="_blank"> <img src="https://res.cloudinary.com/demo/image/upload/e_loop:2/spiral_animated.gif" style="height: 100px;width: 100px;"></a>
 
-        .cart-button, .buy-now-button {
-            padding: 10px;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .cart-button {
-            background-color: #f1c40f;
-            color: #fff;
-        }
-
-        .buy-now-button {
-            background-color: #3498db;
-            color: #fff;
-        }
-
-        .cart-button:hover {
-            background-color: #d4ac0d;
-        }
-
-        .buy-now-button:hover {
-            background-color: #2980b9;
-        }
-
+ <h1 style="color: white;"> image maping</h1>
+ <img src="https://www.shutterstock.com/image-photo/wooden-table-smartphone-computer-cup-260nw-557933230.jpg" usemap="#desk" alt="laptop desk">
+ <map name="desk">
+  <area shape="rect" coords="423,561,289" alt="computer" href="comp.html">
+ </map>
+</div><hr>
+<style>
+  .image{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAAChCAMAAADKrBLPAAAAYFBMVEUAAAABAgT///8KCw0TFBYEBgccHR8ODxE4OTtiY2VTVFYsLS/w8PA7PD4oKSvDxMZZWlxISUsxMjSOj5GbnJ7X2Nrh4uMAAAmDhIb4+fmrrK24ubrR0dLLzM+lpqdsbG4AyrQvAAACE0lEQVR4nO3a3W6bMBiA4c8YYyAEyF+zbl17/3dZY8A40qQdJaj2+6iqkrYHfusajFURAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+emkRv/Ufa1Nqs3EtRyffKmuyzffr8au9RPZd6EP8KkqX+RXJKluySxW5f2HtkT7PlGmVEX3JYzVGzkfa9z6B5m2Oj5VpcxKRevDYbV2xlKAYxJvXiMM3aJd+KW6nSn+awknUpb0V3DNOcbnNYy7q8d0XX3HVITrV52X9Ma7nqivdfd5v2NKvtLuUWc++Sr3erk06O7stL8m+TerKKk90fdvFHR8lJRsebLyMuebjrxJPXU4E5zyV/aJNRspLurbtVGdyYo+fFj+Hv0Oewyw7R8nm5ftaiMthzhpPOph2/akl9KXtrYF/15yqP5MlUaN3jlFaxvUf1VOH2rLJpnuOWzByalZjqfKx7a41/m0OzHMamadpTfa5KI/FM7z2wp7Gnxhtbl22y+Mu2x3Ycmy/XPDajP8GXsPVOlD4cT047OWl/MUs7WKarV10fvfqst+t3+JweU/X9YdZX+uFbqSaLLqtFWer//3gKdLmyNotkt9O0E7fHdszew3kFf9w38wdBe4/nJabzvkWy16tH/ilqe47aezgvkc0j4yafx+Qg9+S9B/Mi2QVLls0+VqX/f6uRrOY3yDAZAAAAAH6yb7wqDZyS1mc6AAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-attachment: scroll ;
+    background-size: 100% 100%;
+ }
 </style>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<h1 style="text-align: center;">Table tages</h1>
+<p>in this tages we can learn about table tages is used to create a tables with data</p>
 
+<table style="width: 100%;">
+  <tr>
+    <th>Name </th>
+    <th>age</th>
+    <th>playing sprot</th>
+  </tr>
+  <tr>
+    <td>virat kohli</td>
+    <td>34</td>
+    <td>cricket</td>
+  </tr>
+  <tr>
+    <td>rohit</td>
+    <td>35</td>
+    <td>cricket</td>
+  </tr>
+</table>
+<style>
+  th,td{
+    border: 1px solid rgb(76, 33, 146); 
+    padding: 10px; 
+    
+  }
+  td{
+    text-align: center;
+  }
+  tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+  }
+</style><br><br><hr>
+
+<div>
+<h1>table in different styles</h1>
+<table  style="width: 100%;" >
+  <tr>
+    <th>Name </th>
+    <th>age</th>
+    <th>playing sprot</th>
+  </tr>
+  <tr>
+    <td>virat kohli</td>
+    <td>34</td>
+    <td>cricket</td>
+  </tr>
+  <tr>
+    <td>rohit</td>
+    <td>35</td>
+    <td>cricket</td>
+  </tr>
+</table>
+<style>
+  th ,td{
+    border: 2px solid black;
+    border-style: inset;
+    border-radius: 10px;
+  }
+  tr:hover{background-color: rgb(113, 162, 216);}
+</style></div><br><br><hr>
+
+<h1>The video element</h1>
+
+<video width="100%" height="240" controls>
+  <source src="" type="video/mp4">
+  <source src="" type="video/ogg">
+  Your browser does not support the video tag.
+</video><hr><br><br>
+
+<h1 id="myHeader">My name is</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Nani";
+}
+</script><hr><br><br>
+
+<h1>iframe </h1>
+<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="https://www.youtube.com" target="iframe_a">youtube.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p><hr><br><br>
+
+<h1>this is the first web pages</h1>
+    <button type="button" 
+    onclick="document.getElementById('demo').innerHTML = Date()">
+       click on the button
+    </button>
+    <p id="demo"></p><hr><br>
+
+<h4>java script light on off program</h4>
+    <script>
+      function light(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulboff.gif"
+        } else {
+          pic = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulbon.gif"
+        }
+        document.getElementById('myImage').src = pic;
+      }
+      </script>
+      
+      <img id="myImage" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/93927/pic_bulboff.gif" width="100" height="180">
+      
+      <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+      </p><hr>
+<h1>slides</h1>
+      
 </body>
 </html>
