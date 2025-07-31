@@ -1,84 +1,69 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NANI - Work in Progress</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      font-family: 'Segoe UI', sans-serif;
-      color: #ffffff;
-      background: #000;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Mobile Blog & Store</title>
+  <link rel="icon" href="icon.png"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    /* 3D Background */
-    .background-3d {
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
-      background-size: 400% 400%;
-      animation: gradientMove 15s ease infinite;
-      transform: rotateX(20deg) rotateY(20deg) scale(1.2);
-      z-index: -1;
-      filter: blur(4px);
-    }
-
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      padding: 0 5vw;
-    }
-
-    .title {
-      font-size: 8vw;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-      line-height: 1.2;
-    }
-
-    .subtitle {
-      font-size: 5vw;
-      color: #ccc;
-      line-height: 1.3;
-    }
-
-    .glow {
-      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
-    }
-
-    /* Small devices optimization */
-    @media (min-width: 768px) {
-      .title {
-        font-size: 3rem;
-      }
-
-      .subtitle {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
 </head>
 <body>
-  <div class="background-3d"></div>
+ <header class="mobile-header">
+  <h1 class="site-title"><i>Nani Prasad </i></h1>
 
-  <div class="content">
-    <div class="title glow">NANI Website</div>
-    <div class="subtitle glow">🚧 Work in Progress 🚧</div>
+  <nav class="mobile-navbar">
+    <ul class="mobile-nav-horizontal">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="shop.html">Cart</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to My Web Site</h2>
+      <p>Read great blogs,job opening and shop cool stuff—all from your phone!</p>
+    </section>
+
+    <section class="quick-links">
+      <a href="blog.html" class="link-card">📝 Blog</a>
+      <a href="shop.html" class="link-card">🛍️ Shop</a>
+      <a href="jobs.html" class="link-card">💼 Jobs</a>
+    </section>
+  </main>
+
+<footer class="mobile-footer">
+  <div class="footer-content">
+    <h3>📞 Contact Us</h3>
+
+    <p><strong>Email:</strong> <a href="mailto:info@example.com">nani@naniprasad.shop</a></p>
+    <p><strong>Location:</strong> Kakinada, Andhra Pradesh</p>
+
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
   </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 My Blog & Store. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
 </body>
 </html>
+
