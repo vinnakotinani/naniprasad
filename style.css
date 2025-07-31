@@ -266,8 +266,6 @@ footer {
   color: #777;
   margin-bottom: 0.5rem;
 }
-
-
 /* === Cart / Shop Page === */
 .cart-container {
   padding: 1rem;
@@ -315,3 +313,56 @@ footer {
 .buy-btn:hover {
   background-color: #218838;
 }
+/* === Jobs Page === */
+.jobs-container {
+  padding: 1rem;
+  background-color: var(--mint, #A8F0D1);
+}
+
+.jobs-container h2 {
+  font-size: 1.3rem;
+  color: var(--primary-blue, #007BFF);
+  margin-bottom: 1rem;
+}
+
+.job-card {
+  background: white;
+  border-left: 6px solid var(--primary-blue, #007BFF);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+}
+
+.job-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.job-card .job-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.apply-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
