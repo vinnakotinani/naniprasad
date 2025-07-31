@@ -238,3 +238,32 @@ footer {
   color: var(--primary-blue); /* Blue on hover */
 }
 
+/* === Blog Page === */
+.blog-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: var(--mint, #A8F0D1);
+}
+
+.blog-post {
+  background-color: white;
+  border-left: 6px solid var(--primary-blue, #007BFF);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+}
+
+.blog-post h2 {
+  font-size: 1.2rem;
+  color: #007BFF;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .date {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
