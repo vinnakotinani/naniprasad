@@ -266,6 +266,7 @@ footer {
   color: #777;
   margin-bottom: 0.5rem;
 }
+
 /* === Cart / Shop Page === */
 .cart-container {
   padding: 1rem;
@@ -313,6 +314,7 @@ footer {
 .buy-btn:hover {
   background-color: #218838;
 }
+
 /* === Jobs Page === */
 .jobs-container {
   padding: 1rem;
@@ -366,3 +368,63 @@ footer {
   background-color: #0056b3;
 }
 
+/* === Blog Page === */
+.blog-container {
+  padding: 1rem;
+  background: var(--mint, #A8F0D1);
+}
+
+.blog-container h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-blue, #007BFF);
+}
+
+.blog-card {
+  background: white;
+  border-left: 6px solid var(--primary-blue, #007BFF);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.blog-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.6rem;
+}
+
+.read-more-btn,
+.special-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.read-more-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.special-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.special-btn:hover {
+  background-color: #218838;
+}
