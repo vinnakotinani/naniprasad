@@ -73,58 +73,8 @@
 </footer>
 
 
-<!-- Consent Banner -->
-<div id="consent-banner" style="
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #e0f7fa;
-  color: #000;
-  text-align: center;
-  padding: 12px;
-  font-size: 16px;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-  z-index: 9999;
-">
-  This website uses cookies for analytics. 
-  <button onclick="acceptConsent()" style="margin-left: 10px; padding: 5px 10px;">Accept</button>
-</div>
-
-<script>
-  function acceptConsent() {
-    // Save consent in local storage
-    localStorage.setItem('cookieConsent', 'true');
-    // Hide the banner
-    document.getElementById('consent-banner').style.display = 'none';
-    
-    // Load Google Analytics only after consent
-    loadAnalytics();
-  }
-
-  // If already accepted, auto-load analytics
-  if (localStorage.getItem('cookieConsent') === 'true') {
-    loadAnalytics();
-    document.getElementById('consent-banner').style.display = 'none';
-  }
-
-  function loadAnalytics() {
-    const script1 = document.createElement('script');
-    script1.async = true;
-    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-GT8V4NSZST'; // Replace with your ID
-    document.head.appendChild(script1);
-
-    const script2 = document.createElement('script');
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-GT8V4NSZST');
-    `;
-    document.head.appendChild(script2);
-  }
-</script>
-
 </body>
 </html>
+
 
 
