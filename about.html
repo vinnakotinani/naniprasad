@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | YourSite</title>
+  <meta name="description" content="Learn about our website, contact us, read terms, and understand our affiliate policy. Clean, fast, and mobile-friendly." />
+  <style>
+    :root {
+      --mint: #a8edea;
+      --blue: #0077cc;
+      --light-blue: #d0f0ff;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-blue);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--mint), var(--blue));
+      padding: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      color: var(--white);
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 1rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--blue);
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--mint);
+      color: #222;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+
+      nav a {
+        padding: 8px 10px;
+        font-size: 15px;
+      }
+
+      main {
+        padding: 1rem 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nani Prasad</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">contact</a>
+      <a href="privacypolicy.html">privacy</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card-grid">
+      <div class="card">
+        <h3>About Us</h3>
+        <p>We are a content-driven platform sharing informative, motivational, and spiritual blogs for global readers.We share some Online deals.</p>
+      </div>
+
+      <div class="card">
+        <h3>Contact Us</h3>
+        <p>Need help? Reach us anytime via email at <strong>nani@naniprasad.com</strong> or <strong>lovelybeats2@gmail.com</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h3>Copyright Info</h3>
+        <p>All content on this site is protected under copyright law. Unauthorized use or distribution is strictly prohibited.</p>
+      </div>
+
+      <div class="card">
+        <h3>Affiliate Disclaimer</h3>
+        <p>We may use affiliate links. If you click and buy, we may earn a small commission at no extra cost to you.</p>
+      </div>
+
+      <div class="card">
+        <h3>Terms & Conditions</h3>
+        <p>By using this site, you agree to our terms including user responsibility, privacy respect, and legal use of content.</p>
+      </div>
+
+       <div class="card">
+        <h3>Note</h3>
+        <p>This Disclaimer page uses a different layout/template than the rest of the website.The content remains accurate and trustworthy.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mobile-footer">
+  <div class="footer-content">
+    <h3>📞 Contact Us</h3>
+
+    <p><strong>Email:</strong> <a href="mailto:info@example.com">nani@naniprasad.com</a></p>
+    <p><strong>Location:</strong> Kakinada, Andhra Pradesh</p>
+    
+  <div class="footer-bottom">
+    <p>© 2025 My Blog & Store. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
