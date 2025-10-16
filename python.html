@@ -1,0 +1,98 @@
+<!-- python.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Python Course — 500 MCQs | Search & Practice</title>
+  <meta name="description" content="Browse and practice 500 Python MCQs with filters, search and explanations. Interactive, accessible and mobile-first." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Prefetch suggestion: <link rel="preload" href="/questions.json" as="fetch"> -->
+</head>
+<body data-page="python">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Python MCQ Academy home">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect rx="4" width="24" height="24" fill="none"/></svg>
+        <span class="brand-text">NANI PRASAD</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="navList2">
+          <span class="hamburger" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <ul id="navList2" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="python.html" aria-current="page">Python</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls" aria-labelledby="controlsTitle">
+      <h1 id="controlsTitle">Python — 500 MCQs</h1>
+      <div class="controls-row">
+        <label class="search">
+          <span class="sr-only">Search questions</span>
+          <input id="searchInput" type="search" placeholder="Search question text or topic..." aria-label="Search questions" />
+        </label>
+
+        <label>
+          <span class="label-inline">Topic</span>
+          <select id="filterTopic" aria-label="Filter by topic">
+            <option value="">All topics</option>
+          </select>
+        </label>
+
+        <label>
+          <span class="label-inline">Difficulty</span>
+          <select id="filterDifficulty" aria-label="Filter by difficulty">
+            <option value="">Any</option>
+            <option value="basic">Basic</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="progress-row" aria-live="polite">
+        <p id="progressText">Loading questions…</p>
+      </div>
+    </section>
+
+    <section id="questionList" class="quiz-list" aria-live="polite">
+      <!-- Questions will be rendered here by app.js -->
+    </section>
+
+    <nav class="pagination" aria-label="Pagination">
+      <button id="prevPage" class="btn" disabled>Previous</button>
+      <span id="pageInfo" class="muted">Page 1</span>
+      <button id="nextPage" class="btn" disabled>Next</button>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year2">2025</span> Python MCQ Academy.</p>
+    </div>
+    <div class="socials" role="navigation" aria-label="Social links">
+        <!-- Inline SVG icons for performance -->
+        <a href="https://github.com/" aria-label="GitHub" class="social" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.6 2.9 8.4 6.9 9.8.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.6 1.1 1.6 1.1 1 .1 2 .7 2.5 1.1.1-.9.4-1.6.8-2-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 011-2.7 3.6 3.6 0 01.1-2.6s.8-.2 2.8 1a9.7 9.7 0 015 0c2-.9 2.8-1 2.8-1 .6 1.4.2 2.6.1 2.9a3.9 3.9 0 011 2.7c0 3.8-2.4 4.6-4.6 4.9.5.4.9 1.1.9 2.3v3.4c0 .3.2.6.7.5 4-1.4 6.9-5.2 6.9-9.8C23.1 5.3 18.3.5 12 .5z"/></svg>
+        </a>
+        <a href="https://twitter.com/" aria-label="Twitter" class="social" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.8c-.6.3-1.2.5-1.9.6.7-.4 1.2-1.1 1.5-1.8-.6.4-1.3.7-2 .9C18.5 4.6 17.7 4 16.8 4c-1.6 0-2.9 1.3-2.9 2.9 0 .2 0 .4.1.6C10 7.4 6.6 5.4 4 2.7c-.3.6-.5 1.3-.5 2 0 1.5.8 2.8 2 3.5-.5 0-1-.1-1.4-.4v.1c0 1.7 1.2 3.2 2.8 3.5-.3.1-.6.1-.9.1-.2 0-.5 0-.7-.1.5 1.5 2 2.6 3.7 2.6C8 18 5.6 18.8 3.1 18.8c-.2 0-.4 0-.6 0C4.5 20 6.8 20.7 9.3 20.7c7 0 10.8-5.8 10.8-10.8v-.5c.8-.6 1.4-1.3 1.9-2.1-.7.3-1.4.6-2.2.7z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" class="social" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C3.88 3.5 3 4.39 3 5.49c0 1.09.88 1.99 1.98 1.99h.02c1.1 0 1.98-.9 1.98-1.99C6.98 4.39 6.1 3.5 4.98 3.5zM3.5 8.98h3v11.52h-3V8.98zM9.02 8.98h2.88v1.57h.04c.4-.76 1.38-1.57 2.85-1.57 3.05 0 3.61 2.01 3.61 4.62v6.9h-3v-6.12c0-1.46-.03-3.33-2.03-3.33-2.03 0-2.34 1.59-2.34 3.22v6.23h-3V8.98z"/></svg>
+        </a>
+      </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
