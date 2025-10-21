@@ -1,6 +1,6 @@
 // Open the UPI link directly (works on mobile)
 function openUPILink() {
-  const upiLink = "upi://pay?pa=nani@hdfc&pn=Nani&am=49&cu=INR";
+  const upiLink = "upi://pay?pa=naniprasad49@ptyes&pn=Nani&am=49&cu=INR";
   window.location.href = upiLink;
 }
 
