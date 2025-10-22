@@ -1,5 +1,5 @@
 // Open the UPI link directly (works on mobile)
-function openUPILink() {
+/*function openUPILink() {
   const upiLink = "upi://pay?pa=vinnakotinani@oksbi&pn=Nani&am=49&cu=INR";
   window.location.href = upiLink;
 }
@@ -14,4 +14,4 @@ window.addEventListener("scroll", () => {
       el.style.transform = "translateY(0)";
     }
   });
-});
+});*/
