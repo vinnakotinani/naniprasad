@@ -8,26 +8,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WPV5NP37');</script>
 <!-- End Google Tag Manager -->
-  <!-- Meta & SEO for Indian Audience -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support Me with ₹49 — Voluntary & Transparent Contribution</title>
-  <meta name="description" content="A transparent and voluntary ₹49 support page for Indian visitors. Contribute easily via PhonePe or UPI if you wish to support my dreams. No scam, no force — just honesty.">
-  <meta name="keywords" content="Support ₹49, Indian UPI, PhonePe, Donate 49, Voluntary Help, Transparent Contribution, nani@hdfc, Support India, Online Support, Small Donation India">
-  <meta name="author" content="Nani">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/41/Indian_Rupee_symbol.svg" type="image/svg+xml">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support Me with ₹49 — Voluntary & Transparent Contribution</title>
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- Simple 49 favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>49</text></svg>">
-</head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support Me with ₹49 — Voluntary & Transparent Contribution</title>
+<meta name="description" content="A transparent and voluntary ₹49 support page for Indian visitors. Contribute easily via PhonePe or UPI if you wish to support my dreams. No scam, no force — just honesty.">
+<meta name="keywords" content="Support ₹49, Indian UPI, PhonePe, Donate 49, Voluntary Help, Transparent Contribution, nani@hdfc, Support India, Online Support, Small Donation India">
+<meta name="author" content="Nani">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/41/Indian_Rupee_symbol.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -35,6 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPV5NP37"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
   <header class="fade-in">
     <h1>Support Me with ₹49</h1>
     <p>Your small help can make a big difference 🇮🇳</p>
@@ -44,8 +34,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="support-card slide-up">
     <h2>Support Me with ₹49</h2>
     <p>Join kind-hearted Indians who believe small contributions make a big change.</p>
-      <button id="payBtn" class="support-btn">💰 Pay ₹49 via UPI</button>
-
+      <button id="payBtn" class="support-btn">💰 Pay ₹49 via Razorpay</button>
   </section>
 
   <!-- Hero Section -->
@@ -85,9 +74,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>© 2025 Nani — All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Razorpay Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    document.getElementById('payBtn').onclick = function(e) {
+      var options = {
+        "key": "rzp_test_YourApiKeyHere", // Replace with your Razorpay Key ID
+        "amount": 4900, // ₹49 in paise
+        "currency": "INR",
+        "name": "Support Nani",
+        "description": "Voluntary ₹49 Support",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Indian_Rupee_symbol.svg",
+        "handler": function (response){
+            alert("✅ Payment Successful! Thank you for your ₹49 support.");
+            console.log(response);
+        },
+        "prefill": {
+            "name": "Nani Supporter",
+            "email": "lovelybeats2@gmail.com",
+            "contact": "9999999999"
+        },
+        "theme": {
+            "color": "#3399cc"
+        }
+      };
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+      e.preventDefault();
+    }
+  </script>
+
 </body>
 </html>
-
-
-
