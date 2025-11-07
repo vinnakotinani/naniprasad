@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPV5NP37');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nani Prasad - Quiz</title>
+     <meta name="title" content="Free Tech Quizzes - Test Your Python, MySQL, Power BI & Excel Knowledge">
+    <meta name="description" content="Test your knowledge with free interactive quizzes on Python, MySQL, Power BI, Excel, and Machine Learning. Challenge yourself and track your progress.">
+    <meta name="keywords" content="Python quiz, MySQL test, Power BI quiz, Excel assessment, Machine Learning quiz, Programming test, Free online quizzes, Tech knowledge test">
+    <meta name="author" content="Nani Prasad">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/quiz">
+    <meta property="og:title" content="Free Tech Quizzes - Test Your Knowledge | Nani Prasad">
+    <meta property="og:description" content="Challenge yourself with free quizzes on Python, MySQL, Power BI, Excel, and Machine Learning. Track your progress and improve your skills.">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/og-quiz.jpg">
+    <meta property="og:site_name" content="Nani Prasad">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/quiz">
+    <meta property="twitter:title" content="Free Tech Quizzes | Nani Prasad">
+    <meta property="twitter:description" content="Test your Python, MySQL, Power BI & Excel knowledge with free interactive quizzes.">
+    <meta property="twitter:image" content="https://www.yourwebsite.com/images/twitter-quiz.jpg">
+    
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPV5NP37"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="logo-text"></span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+            <a href="login.html" class="login-btn">Login</a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="sidebar-menu">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home" style="color: #60a5fa;"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <i class="fas fa-book" style="color: #34d399;"></i>
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="blogs.html">
+                    <i class="fas fa-blog" style="color: #fbbf24;"></i>
+                    Blogs
+                </a>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class="fas fa-comments" style="color: #f87171;"></i>
+                    Chat
+                </a>
+            </li>
+            <li>
+                <a href="quiz.html">
+                    <i class="fas fa-question-circle" style="color: #a78bfa;"></i>
+                    Quiz
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-info-circle" style="color: #60a5fa;"></i>
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    
+    <!-- Main Content -->
+    <main class="quiz-main">
+        <div class="quiz-container">
+            <!-- Quiz Categories -->
+            <section class="quiz-categories-section">
+                <h2 class="section-title">Choose a Quiz Category</h2>
+                <div class="quiz-categories">
+                    <div class="quiz-category-card" data-category="python">
+                        <div class="quiz-category-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Test your Python knowledge</p>
+                        <span class="quiz-count">15 Questions</span>
+                    </div>
+                    
+                    <div class="quiz-category-card" data-category="mysql">
+                        <div class="quiz-category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MySQL</h3>
+                        <p>Database mastery quiz</p>
+                        <span class="quiz-count">12 Questions</span>
+                    </div>
+                    
+                    <div class="quiz-category-card" data-category="excel">
+                        <div class="quiz-category-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <h3>Excel</h3>
+                        <p>Excel skills assessment</p>
+                        <span class="quiz-count">10 Questions</span>
+                    </div>
+                    
+                    <div class="quiz-category-card" data-category="powerbi">
+                        <div class="quiz-category-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Power BI</h3>
+                        <p>Data visualization quiz</p>
+                        <span class="quiz-count">8 Questions</span>
+                    </div>
+                    
+                    <div class="quiz-category-card" data-category="ml">
+                        <div class="quiz-category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>ML concepts test</p>
+                        <span class="quiz-count">20 Questions</span>
+                    </div>
+                    
+                    <div class="quiz-category-card" data-category="webdev">
+                        <div class="quiz-category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Frontend & backend quiz</p>
+                        <span class="quiz-count">18 Questions</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Quiz Interface (Initially Hidden) -->
+            <section class="quiz-interface" id="quizInterface">
+                <div class="quiz-header">
+                    <button class="back-to-categories">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Categories
+                    </button>
+                    <div class="quiz-timer">
+                        <i class="fas fa-clock"></i>
+                        <span id="timer">10:00</span>
+                    </div>
+                </div>
+                
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text">
+                        Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span>
+                    </span>
+                </div>
+                
+                <div class="quiz-content">
+                    <div class="question-container">
+                        <h3 class="question-text" id="questionText">What is the correct file extension for Python files?</h3>
+                    </div>
+                    
+                    <div class="answers-container" id="answersContainer">
+                        <label class="answer-option">
+                            <input type="radio" name="answer" value="a">
+                            <span class="answer-text">.py</span>
+                        </label>
+                        <label class="answer-option">
+                            <input type="radio" name="answer" value="b">
+                            <span class="answer-text">.python</span>
+                        </label>
+                        <label class="answer-option">
+                            <input type="radio" name="answer" value="c">
+                            <span class="answer-text">.pyt</span>
+                        </label>
+                        <label class="answer-option">
+                            <input type="radio" name="answer" value="d">
+                            <span class="answer-text">.pt</span>
+                        </label>
+                    </div>
+                    
+                    <div class="quiz-actions">
+                        <button class="skip-btn">Skip</button>
+                        <button class="next-btn" id="nextBtn">Next</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Quiz Results (Initially Hidden) -->
+            <section class="quiz-results" id="quizResults">
+                <div class="results-container">
+                    <div class="results-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h2 class="results-title">Quiz Completed!</h2>
+                    <div class="score-display">
+                        <span class="score-number" id="scoreNumber">8</span>
+                        <span class="score-total">/ 10</span>
+                    </div>
+                    <p class="results-message" id="resultsMessage">Great job! You did well!</p>
+                    
+                    <div class="results-stats">
+                        <div class="stat">
+                            <i class="fas fa-check-circle correct-icon"></i>
+                            <span>Correct: <strong id="correctAnswers">8</strong></span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-times-circle incorrect-icon"></i>
+                            <span>Incorrect: <strong id="incorrectAnswers">2</strong></span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-forward skip-icon"></i>
+                            <span>Skipped: <strong id="skippedAnswers">0</strong></span>
+                        </div>
+                    </div>
+                    
+                    <div class="results-actions">
+                        <button class="retake-btn">Retake Quiz</button>
+                        <button class="new-quiz-btn">Try Another Quiz</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="about.html">About</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Nani Prasad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPV5NP37');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nani Prasad - Chat</title>
+    <meta name="title" content="Live Chat Support - Get Help with Python, MySQL, Power BI & More">
+    <meta name="description" content="Connect with Nani Prasad through live chat for instant help with Python, MySQL, Power BI, Excel, and Machine Learning. Get real-time support and answers to your questions.">
+    <meta name="keywords" content="Live chat, Python help, MySQL support, Power BI assistance, Excel help, Machine Learning questions, Tech support, Online tutoring">
+    <meta name="author" content="Nani Prasad">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/chat">
+    <meta property="og:title" content="Live Chat Support - Get Instant Help | Nani Prasad">
+    <meta property="og:description" content="Chat live with Nani Prasad for instant help with your programming and data science questions. Real-time support available.">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/og-chat.jpg">
+    <meta property="og:site_name" content="Nani Prasad">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/chat">
+    <meta property="twitter:title" content="Live Chat Support | Nani Prasad">
+    <meta property="twitter:description" content="Get instant help with Python, MySQL, Power BI & more through live chat.">
+    <meta property="twitter:image" content="https://www.yourwebsite.com/images/twitter-chat.jpg">
+    
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPV5NP37"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="logo-text"></span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="chat.html" class="active">Chat</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+            <a href="login.html" class="login-btn">Login</a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="sidebar-menu">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home" style="color: #60a5fa;"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <i class="fas fa-book" style="color: #34d399;"></i>
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="blogs.html">
+                    <i class="fas fa-blog" style="color: #fbbf24;"></i>
+                    Blogs
+                </a>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class="fas fa-comments" style="color: #f87171;"></i>
+                    Chat
+                </a>
+            </li>
+            <li>
+                <a href="quiz.html">
+                    <i class="fas fa-question-circle" style="color: #a78bfa;"></i>
+                    Quiz
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-info-circle" style="color: #60a5fa;"></i>
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    
+    <!-- Main Content -->
+    <main class="chat-main">
+        <div class="chat-container">
+            <!-- Chat Sidebar -->
+            <div class="chat-sidebar">
+                <div class="chat-header">
+                    <h3>Messages</h3>
+                    <button class="new-chat-btn">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search conversations...">
+                </div>
+                
+                <div class="chat-list">
+                    <div class="chat-item active" data-user="nani">
+                        <div class="chat-avatar" style="background-image: url('https://picsum.photos/seed/user1/100/100.jpg');">
+                            <span class="online-indicator"></span>
+                        </div>
+                        <div class="chat-info">
+                            <h4>Nani Prasad</h4>
+                            <p>How can I help you today?</p>
+                        </div>
+                        <div class="chat-meta">
+                            <span class="chat-time">2:30 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-item" data-user="sarah">
+                        <div class="chat-avatar" style="background-image: url('https://picsum.photos/seed/user2/100/100.jpg');">
+                            <span class="online-indicator"></span>
+                        </div>
+                        <div class="chat-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Thanks for the Python tutorial!</p>
+                        </div>
+                        <div class="chat-meta">
+                            <span class="chat-time">1:45 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-item" data-user="michael">
+                        <div class="chat-avatar" style="background-image: url('https://picsum.photos/seed/user3/100/100.jpg');">
+                        </div>
+                        <div class="chat-info">
+                            <h4>Michael Chen</h4>
+                            <p>Can you explain this concept again?</p>
+                        </div>
+                        <div class="chat-meta">
+                            <span class="chat-time">Yesterday</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-item" data-user="emily">
+                        <div class="chat-avatar" style="background-image: url('https://picsum.photos/seed/user4/100/100.jpg');">
+                            <span class="online-indicator"></span>
+                        </div>
+                        <div class="chat-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Great course content!</p>
+                        </div>
+                        <div class="chat-meta">
+                            <span class="chat-time">Yesterday</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-item" data-user="community">
+                        <div class="chat-avatar" style="background-image: url('https://picsum.photos/seed/community/100/100.jpg');">
+                            <span class="online-indicator"></span>
+                        </div>
+                        <div class="chat-info">
+                            <h4>Study Group</h4>
+                            <p>John: Anyone up for study session?</p>
+                        </div>
+                        <div class="chat-meta">
+                            <span class="chat-time">12:30 PM</span>
+                            <span class="unread-badge">5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Window -->
+            <div class="chat-window">
+                <div class="chat-window-header">
+                    <div class="chat-user-info">
+                        <div class="chat-avatar" style="background-image: url('https://picsum.photos/seed/user1/100/100.jpg');">
+                            <span class="online-indicator"></span>
+                        </div>
+                        <div class="user-details">
+                            <h4 id="chatUserName">Nani Prasad</h4>
+                            <p class="user-status" id="chatUserStatus">Online</p>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button class="chat-action-btn" title="Voice Call">
+                            <i class="fas fa-phone"></i>
+                        </button>
+                        <button class="chat-action-btn" title="Video Call">
+                            <i class="fas fa-video"></i>
+                        </button>
+                        <button class="chat-action-btn" title="More Options">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+                
+                <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="chat-input-container">
+                    <button class="chat-input-btn" title="Attach file">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <div class="chat-input-wrapper">
+                        <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." autocomplete="off">
+                        <button class="emoji-btn" title="Add emoji">
+                            <i class="fas fa-smile"></i>
+                        </button>
+                    </div>
+                    <button class="send-btn" id="sendBtn" title="Send message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="about.html">About</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Nani Prasad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+    
+    <!-- Chat-specific JavaScript -->
+    <script>
+        // Chat functionality for immediate display
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const chatMessages = document.getElementById('chatMessages');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const chatItems = document.querySelectorAll('.chat-item');
+        const chatUserName = document.getElementById('chatUserName');
+        const chatUserStatus = document.getElementById('chatUserStatus');
+        
+        // User data
+        const users = {
+            nani: {
+                name: "Nani Prasad",
+                avatar: "https://picsum.photos/seed/user1/100/100.jpg",
+                status: "Online",
+                online: true
+            },
+            sarah: {
+                name: "Sarah Johnson",
+                avatar: "https://picsum.photos/seed/user2/100/100.jpg",
+                status: "Online",
+                online: true
+            },
+            michael: {
+                name: "Michael Chen",
+                avatar: "https://picsum.photos/seed/user3/100/100.jpg",
+                status: "Offline",
+                online: false
+            },
+            emily: {
+                name: "Emily Rodriguez",
+                avatar: "https://picsum.photos/seed/user4/100/100.jpg",
+                status: "Online",
+                online: true
+            },
+            community: {
+                name: "Study Group",
+                avatar: "https://picsum.photos/seed/community/100/100.jpg",
+                status: "5 members online",
+                online: true
+            }
+        };
+        
+        // Message history for each user
+        const messageHistory = {
+            nani: [
+                { sender: "other", text: "Hi there! How can I help you today?", time: "2:30 PM" },
+                { sender: "me", text: "I'm having trouble with Python decorators", time: "2:31 PM" },
+                { sender: "other", text: "I'd be happy to help! Decorators are functions that modify other functions. Think of them as wrappers that add extra functionality.", time: "2:32 PM" }
+            ],
+            sarah: [
+                { sender: "other", text: "Thanks for the Python tutorial!", time: "1:45 PM" },
+                { sender: "me", text: "You're welcome! I'm glad it helped", time: "1:46 PM" },
+                { sender: "other", text: "The examples were really clear", time: "1:47 PM" }
+            ],
+            michael: [
+                { sender: "other", text: "Can you explain this concept again?", time: "Yesterday" }
+            ],
+            emily: [
+                { sender: "other", text: "Great course content!", time: "Yesterday" }
+            ],
+            community: [
+                { sender: "other", text: "John: Anyone up for study session?", time: "12:30 PM" },
+                { sender: "other", text: "Jane: I'm in! When?", time: "12:32 PM" },
+                { sender: "other", text: "Mike: How about 3 PM?", time: "12:35 PM" }
+            ]
+        };
+        
+        let currentUser = 'nani';
+        let typingTimeout;
+        
+        // Initialize chat
+        function initChat() {
+            loadMessages(currentUser);
+            updateUserHeader(currentUser);
+        }
+        
+        // Load messages for a user
+        function loadMessages(user) {
+            chatMessages.innerHTML = '';
+            
+            // Add date separator
+            const dateDiv = document.createElement('div');
+            dateDiv.className = 'message-date';
+            dateDiv.innerHTML = `<span>${user === 'community' ? 'Today' : 'Today'}</span>`;
+            chatMessages.appendChild(dateDiv);
+            
+            // Load message history
+            const messages = messageHistory[user] || [];
+            messages.forEach(msg => {
+                addMessageToChat(msg.text, msg.sender === 'me', msg.time);
+            });
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Update user header
+        function updateUserHeader(user) {
+            const userData = users[user];
+            chatUserName.textContent = userData.name;
+            chatUserStatus.textContent = userData.status;
+            
+            const headerAvatar = document.querySelector('.chat-window-header .chat-avatar');
+            headerAvatar.style.backgroundImage = `url('${userData.avatar}')`;
+            
+            // Update online indicator
+            const onlineIndicator = document.querySelector('.chat-window-header .online-indicator');
+            if (userData.online) {
+                onlineIndicator.style.display = 'block';
+            } else {
+                onlineIndicator.style.display = 'none';
+            }
+        }
+        
+        // Switch between chats
+        chatItems.forEach(item => {
+            item.addEventListener('click', () => {
+                chatItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                
+                currentUser = item.dataset.user;
+                loadMessages(currentUser);
+                updateUserHeader(currentUser);
+            });
+        });
+        
+        // Add message to chat
+        function addMessageToChat(text, isMe, time) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = isMe ? 'message sent' : 'message received';
+            
+            if (!isMe) {
+                const avatar = document.createElement('div');
+                avatar.className = 'message-avatar';
+                avatar.style.backgroundImage = `url('${users[currentUser].avatar}')`;
+                messageDiv.appendChild(avatar);
+            }
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            const textP = document.createElement('p');
+            textP.textContent = text;
+            contentDiv.appendChild(textP);
+            
+            const timeSpan = document.createElement('span');
+            timeSpan.className = 'message-time';
+            timeSpan.textContent = time || getCurrentTime();
+            contentDiv.appendChild(timeSpan);
+            
+            messageDiv.appendChild(contentDiv);
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Save to message history
+            if (!messageHistory[currentUser]) {
+                messageHistory[currentUser] = [];
+            }
+            messageHistory[currentUser].push({
+                sender: isMe ? 'me' : 'other',
+                text: text,
+                time: time || getCurrentTime()
+            });
+        }
+        
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                addMessageToChat(message, true);
+                
+                // Clear input
+                chatInput.value = '';
+                
+                // Simulate typing indicator and response
+                if (currentUser === 'community') {
+                    // For community chat, simulate other users typing
+                    simulateCommunityResponse();
+                } else {
+                    // For individual chats, simulate the other person typing
+                    simulateTypingAndResponse();
+                }
+            }
+        }
+        
+        // Simulate typing indicator and response
+        function simulateTypingAndResponse() {
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Hide typing indicator and add response after random delay
+            clearTimeout(typingTimeout);
+            typingTimeout = setTimeout(() => {
+                hideTypingIndicator();
+                
+                // Generate a contextual response
+                const response = generateResponse();
+                addMessageToChat(response, false);
+            }, 1500 + Math.random() * 2000);
+        }
+        
+        // Simulate community response
+        function simulateCommunityResponse() {
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Hide typing indicator and add response after random delay
+            clearTimeout(typingTimeout);
+            typingTimeout = setTimeout(() => {
+                hideTypingIndicator();
+                
+                // Generate a community response
+                const communityResponses = [
+                    "John: That's a great point!",
+                    "Jane: I agree with that approach",
+                    "Mike: Has anyone tried the new Python course?",
+                    "Sarah: I found this resource helpful",
+                    "David: Let's schedule a study session"
+                ];
+                
+                const response = communityResponses[Math.floor(Math.random() * communityResponses.length)];
+                addMessageToChat(response, false);
+            }, 2000 + Math.random() * 3000);
+        }
+        
+        // Generate contextual response
+        function generateResponse() {
+            const lastMessage = messageHistory[currentUser][messageHistory[currentUser].length - 1];
+            const userMessage = lastMessage.text.toLowerCase();
+            
+            // Simple keyword-based responses
+            if (userMessage.includes('help') || userMessage.includes('question')) {
+                return "I'm here to help! What specific topic are you struggling with?";
+            } else if (userMessage.includes('python')) {
+                return "Python is a great language! What aspect of Python would you like to discuss?";
+            } else if (userMessage.includes('thank')) {
+                return "You're welcome! I'm glad I could help.";
+            } else if (userMessage.includes('hello') || userMessage.includes('hi')) {
+                return "Hello! How can I assist you today?";
+            } else if (userMessage.includes('course')) {
+                return "Which course are you interested in? I can provide more information.";
+            } else {
+                // Default responses
+                const defaultResponses = [
+                    "That's interesting! Tell me more.",
+                    "I see what you mean. Let me think about that.",
+                    "Great question! Here's what I think...",
+                    "I understand your concern. Let me help with that.",
+                    "Thanks for sharing! What would you like to know next?"
+                ];
+                return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+            }
+        }
+        
+        // Show/hide typing indicator
+        function showTypingIndicator() {
+            typingIndicator.style.display = 'flex';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function hideTypingIndicator() {
+            typingIndicator.style.display = 'none';
+        }
+        
+        // Get current time
+        function getCurrentTime() {
+            return new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+        }
+        
+        // Event listeners
+        sendBtn.addEventListener('click', sendMessage);
+        
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+        
+        // Auto-focus input
+        chatInput.focus();
+        
+        // Initialize chat on page load
+        initChat();
+    </script>
+</body>
+</html>
